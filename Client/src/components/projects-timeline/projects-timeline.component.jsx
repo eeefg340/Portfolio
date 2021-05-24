@@ -47,14 +47,14 @@ const TimeLine = () => {
       Projectid: id,
       LikeId: localStorage.id,
     };
-    const response = await axios.post(`${api}like`, config);
+    const response = await axios.post(`${api}/like`, config);
     localStorage.id = response.data.uniqIdLike;
     setStatus(response.status);
   };
 
   const DisplayTotalLikes = async () => {
     try {
-      const Response = await axios.get(`${api}GetAllLikes`);
+      const Response = await axios.get(`${api}/GetAllLikes`);
       setCountLikeProjectOne(Response.data[0].Likes);
       setCountLikeProjectTwo(Response.data[1].Likes);
       setCountLikeProjectThree(Response.data[2].Likes);
