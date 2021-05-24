@@ -20,7 +20,7 @@ mongoose
 const app = express();
 
 app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "http://localhost:3000");
+  res.header("Access-Control-Allow-Origin");
   res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
   res.header("Access-Control-Allow-Credentials", true);
 
@@ -45,7 +45,7 @@ app.use(bodyParser.json({ limit: "700mb" }));
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:3000",
+    // origin: "http://localhost:3000",
   })
 );
 
@@ -53,12 +53,9 @@ app.use(morgan("dev")); // log every request to the console
 
 const root = require("path").join(__dirname, "/public");
 app.use(express.static(root));
-app.get("/login", (req, res) => {
-  res.sendFile("index.html", { root });
-});
-app.get("/register", (req, res) => {
-  res.sendFile("index.html", { root });
-});
+// app.get("/", (req, res) => {
+//   res.sendFile("index.html", { root });
+// });
 
 
 const RouteLikes = require("./routes/Likes");
