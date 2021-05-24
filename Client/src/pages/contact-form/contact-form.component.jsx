@@ -55,7 +55,7 @@ const ContactForm = () => {
       Subject: Subject,
       TextArea: TextArea,
     };
-    const response = await axios.post(`${api}/mail`, PayLoad);
+    const response = await axios.post(`${api}mail`, PayLoad);
     console.log(response.data)
   };
 
