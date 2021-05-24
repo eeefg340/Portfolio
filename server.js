@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 // const passport = require("passport");
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
-const db = require("./config/keys").mongoURI;
+const db = require("./Config/Keys").mongoUdRI;
 
 // Connect to MongoDB
 mongoose

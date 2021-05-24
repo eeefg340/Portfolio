@@ -3,7 +3,4 @@ dbPassword =
 
 module.exports = {
   mongoURI: dbPassword,
-  session: {
-    cookieKey: "imdinrodaimthebest",
-  },
 };
