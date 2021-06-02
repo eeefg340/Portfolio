@@ -34,8 +34,8 @@ const About = () => {
                 system, auth system, api integration, prices calculation, panel
                 admin, order status, full interface to the cloud for uploading
                 pdf files and downloading them through the panel admin. The
-                technologies I work with are: clent side: react,library of react
-                ui. on the server side node js mongodb Loves to learn new things
+                technologies I work with are: client side: react,library of react
+                ui. on the server side node js mongodb. Loves to learn new things
                 on my own all the time and i always Improves my skills. I live
                 and breathe the web world.
                 <br /> <br />

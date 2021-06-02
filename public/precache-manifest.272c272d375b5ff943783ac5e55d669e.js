@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "69defb521c4dbc1673d01390f0013b30",
+    "revision": "294edf1224a4af3a2471ed0de820bd4e",
     "url": "/index.html"
   },
   {
-    "revision": "ea323017748bb7a93526",
-    "url": "/static/css/main.c58d94b7.chunk.css"
+    "revision": "02154cc55bed19ebb14c",
+    "url": "/static/css/main.afd9fea0.chunk.css"
   },
   {
-    "revision": "1529ccea03ab320c9d29",
-    "url": "/static/js/2.3711188f.chunk.js"
+    "revision": "46043ce50a3d1bae5703",
+    "url": "/static/js/2.5a751a55.chunk.js"
   },
   {
     "revision": "cf1b129b5c272ab5c924fa9150c8b22d",
-    "url": "/static/js/2.3711188f.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.5a751a55.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ea323017748bb7a93526",
-    "url": "/static/js/main.5fcb128d.chunk.js"
+    "revision": "02154cc55bed19ebb14c",
+    "url": "/static/js/main.194c05f1.chunk.js"
   },
   {
     "revision": "1f694fd7580affc931a3",
     "url": "/static/js/runtime-main.afba7e97.js"
+  },
+  {
+    "revision": "5e46723648e67d94115c20212db78d85",
+    "url": "/static/media/Fortnite-Project.5e467236.png"
   },
   {
     "revision": "9730fefc26bb187c4f4bb29b95d82e7a",
@@ -104,16 +108,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/javascript.2d2e31cc.svg"
   },
   {
-    "revision": "f5f9574bc252332ba7942e5d56fbcc28",
-    "url": "/static/media/logow.f5f9574b.png"
-  },
-  {
     "revision": "82291019f34ab54a677c456a84127cc3",
     "url": "/static/media/material-ui-1.82291019.svg"
-  },
-  {
-    "revision": "3ea10fb644c05e7c947611dae8d58a45",
-    "url": "/static/media/mern_tip_calc.3ea10fb6.webp"
   },
   {
     "revision": "2985235df31b8742d893d5b7e80145c5",

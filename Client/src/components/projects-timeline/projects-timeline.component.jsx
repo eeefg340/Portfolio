@@ -3,7 +3,7 @@ import { Timeline, Events, UrlButton, ImageEvent } from "@merc/react-timeline";
 
 // projects
 import L_ReactToDoList from "../../assets/img/projects/Translate-Project.png";
-import L_MernTipCalc from "../../assets/img/projects/mern_tip_calc.webp";
+import L_MernTipCalc from "../../assets/img/projects/Fortnite-Project.png";
 import L_GetGitHubInfo from "../../assets/img/projects/get_github_info.webp";
 import L_SmartBrain from "../../assets/img/projects/brain.webp";
 import L_RoboFriends from "../../assets/img/projects/Robofriends.webp";
@@ -26,14 +26,14 @@ import L_BOOTSTRAP4 from "../../assets/img/skills/bootstrap-4.svg";
 import L_DJANGO from "../../assets/img/skills/django.svg";
 import L_DIGITAL_OCEAN from "../../assets/img/skills/digital-ocean.svg";
 import L_GIT from "../../assets/img/skills/github-api.svg";
+import I_jwt from "../../assets/img/skills/jwt.png";
 import L_MATERIALUI from "../../assets/img/skills/material-ui-1.svg";
 import Badge from "@material-ui/core/Badge";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import "./projects-timeline.styles.css";
 import { Button } from "@material-ui/core";
 import axios from "axios";
-import {api} from "../Api/Api"
-
+import { api } from "../Api/Api";
 
 const TimeLine = () => {
   const [CountLikeProjectOne, setCountLikeProjectOne] = useState(0);
@@ -41,15 +41,19 @@ const TimeLine = () => {
   const [CountLikeProjectThree, setCountLikeProjectThree] = useState(0);
   const [ResStatus, setStatus] = useState(null);
 
-  const SaveLike = async (id) => {
+  const SaveLike = async (id, like, unlikev) => {
     const config = {
       Like: 1,
       Projectid: id,
       LikeId: localStorage.id,
     };
-    const response = await axios.post(`${api}like`, config);
-    localStorage.id = response.data.uniqIdLike;
-    setStatus(response.status);
+    try {
+      const response = await axios.post(`${api}like`, config);
+      localStorage.id = response.data.uniqIdLike;
+      setStatus(response.status);
+    } catch (e) {
+      console.error(e);
+    }
   };
 
   const DisplayTotalLikes = async () => {
@@ -74,7 +78,7 @@ const TimeLine = () => {
         <Events>
           {/* Project: Todo List With MUI */}
           <ImageEvent
-            date="01/10/2020"
+            date="05/01/2020"
             className="text-center"
             text="Calculating Language Translation Prices"
             src={L_ReactToDoList}
@@ -94,19 +98,22 @@ const TimeLine = () => {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> This is a Todo App created
-                        with React and Material UI that keeps a track of your
-                        Todos
+                        <strong>Description:</strong> This app was built for my
+                        business, to provide my clients with an instant quote
+                        for translation
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
                           <li>Order System</li>
-                          <li>Powered by React and Material UI</li>
+                          <li>Powered by Material UI</li>
                           <li>Respoisive Design</li>
                           <li>Admin Panel</li>
-                          <li>Auth system</li>
-                          <li>Api integration</li>
-                          <li>Prices calculation</li>
+                          <li>Auth system with cookie</li>
+                          <li>Api integration with cloudinary</li>
+                          <li>
+                            Price calculation according to source language and
+                            target language
+                          </li>
                         </ul>
                         <hr />
                         <strong>Tech used:</strong>
@@ -141,7 +148,18 @@ const TimeLine = () => {
                                 rounded
                                 className="image-style1 m-1"
                               ></Image>{" "}
-                              Express
+                              Express + Express-session || Cookie
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
+                                src={I_jwt}
+                                alt="Express"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Passport.js
                             </span>
                           </li>
                           <li>
@@ -174,17 +192,17 @@ const TimeLine = () => {
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
                 <UrlButton
-                  href="https://akjha96.github.io/Todo-List-React/"
+                  href="https://translateproject.herokuapp.com/"
                   target="_blank"
                 >
                   SEE LIVE
                 </UrlButton>
-                <UrlButton
+                {/* <UrlButton
                   href="https://github.com/akjha96/Todo-List-React"
                   target="_blank"
                 >
                   SOURCE CODE
-                </UrlButton>
+                </UrlButton> */}
                 <Button
                   onClick={() => {
                     SaveLike(1);
@@ -200,9 +218,9 @@ const TimeLine = () => {
 
           {/* Project: MERN Tip Calculator */}
           <ImageEvent
-            date="16/09/2020"
+            date="16/04/2021"
             className="text-center"
-            text="MERN Tip Calculator"
+            text="Fortnite - buy skins by accumulating points"
             src={L_MernTipCalc}
             alt="MERN Tip Calculator"
           >
@@ -220,15 +238,22 @@ const TimeLine = () => {
 
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
-                        <strong>Description:</strong> This app calculates Tip
-                        for the amount entered and percentage of tip to be
-                        given. It uses MERN stack build to acomplish the same.
+                        <strong>Description:</strong> This app You can earn
+                        points if you answer trivia questions correctly, if you
+                        earn enough points, you can buy skins
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
-                          <li>Enter amount upto your desire</li>
-                          <li>Real-time API calls with Backend features</li>
-                          <li>Styled with Material-UI</li>
+                          <li>
+                            The system knows to identify if you have enough
+                            points or not
+                          </li>
+                          <li>The system detects if you have forged points</li>
+                          <li>
+                            An admin user can delete or add points to the user
+                          </li>
+                          <li>Styled by bootstrap</li>
+                          <li>Trivia questions</li>
                         </ul>
                         <hr />
                         <strong>Tech used:</strong>
@@ -241,7 +266,7 @@ const TimeLine = () => {
                                 rounded
                                 className="image-style1 m-1"
                               ></Image>{" "}
-                              React
+                              React Hooks Context API
                             </span>
                           </li>
                           <li>
@@ -269,6 +294,17 @@ const TimeLine = () => {
                           <li>
                             <span className="p-2">
                               <Image
+                                src={I_jwt}
+                                alt="JWT"
+                                rounded
+                                className="image-style1 m-1"
+                              ></Image>{" "}
+                              Passport.js-JWT
+                            </span>
+                          </li>
+                          <li>
+                            <span className="p-2">
+                              <Image
                                 src={L_MONGODB}
                                 alt="MongoDB"
                                 rounded
@@ -280,12 +316,12 @@ const TimeLine = () => {
                           <li>
                             <span className="p-2">
                               <Image
-                                src={L_MATERIALUI}
+                                src={L_BOOTSTRAP4}
                                 alt="Material-UI"
                                 rounded
                                 className="image-style1 m-1"
                               ></Image>{" "}
-                              Material-UI
+                              Bootstrap
                             </span>
                           </li>
                         </ul>
@@ -296,11 +332,18 @@ const TimeLine = () => {
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
                 <UrlButton
+                  href="https://akjha96.github.io/Todo-List-React/"
+                  target="_blank"
+                >
+                  SEE LIVE
+                </UrlButton>
+                <UrlButton
                   href="https://github.com/akjha96/MernTipCaculator-FrontEnd"
                   target="_blank"
                 >
                   SOURCE CODE
                 </UrlButton>
+
                 <Button
                   onClick={() => {
                     SaveLike(2);
@@ -315,7 +358,8 @@ const TimeLine = () => {
           </ImageEvent>
 
           {/* Project: Get GitHub Info */}
-          <ImageEvent
+
+          {/* <ImageEvent
             date="19/07/2020"
             className="text-center"
             text="Get GitHub Info"
@@ -422,7 +466,7 @@ const TimeLine = () => {
                 </Button>
               </div>
             </div>
-          </ImageEvent>
+          </ImageEvent> */}
 
           {/* Project: Smart Brain */}
 

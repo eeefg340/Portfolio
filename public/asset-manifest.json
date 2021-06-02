@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.c58d94b7.chunk.css",
-    "main.js": "/static/js/main.5fcb128d.chunk.js",
-    "main.js.map": "/static/js/main.5fcb128d.chunk.js.map",
+    "main.css": "/static/css/main.afd9fea0.chunk.css",
+    "main.js": "/static/js/main.194c05f1.chunk.js",
+    "main.js.map": "/static/js/main.194c05f1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.afba7e97.js",
     "runtime-main.js.map": "/static/js/runtime-main.afba7e97.js.map",
-    "static/js/2.3711188f.chunk.js": "/static/js/2.3711188f.chunk.js",
-    "static/js/2.3711188f.chunk.js.map": "/static/js/2.3711188f.chunk.js.map",
+    "static/js/2.5a751a55.chunk.js": "/static/js/2.5a751a55.chunk.js",
+    "static/js/2.5a751a55.chunk.js.map": "/static/js/2.5a751a55.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.7bbe215138253b04b680201f8abc8ea4.js": "/precache-manifest.7bbe215138253b04b680201f8abc8ea4.js",
+    "precache-manifest.272c272d375b5ff943783ac5e55d669e.js": "/precache-manifest.272c272d375b5ff943783ac5e55d669e.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.c58d94b7.chunk.css.map": "/static/css/main.c58d94b7.chunk.css.map",
-    "static/js/2.3711188f.chunk.js.LICENSE.txt": "/static/js/2.3711188f.chunk.js.LICENSE.txt",
+    "static/css/main.afd9fea0.chunk.css.map": "/static/css/main.afd9fea0.chunk.css.map",
+    "static/js/2.5a751a55.chunk.js.LICENSE.txt": "/static/js/2.5a751a55.chunk.js.LICENSE.txt",
+    "static/media/Fortnite-Project.png": "/static/media/Fortnite-Project.5e467236.png",
     "static/media/Robofriends.webp": "/static/media/Robofriends.9730fefc.webp",
     "static/media/Translate-Project.png": "/static/media/Translate-Project.ddc80b55.png",
     "static/media/accenture-3.svg": "/static/media/accenture-3.21999f09.svg",
@@ -32,9 +33,7 @@
     "static/media/heroku.svg": "/static/media/heroku.b38ff61a.svg",
     "static/media/html-5.svg": "/static/media/html-5.676e8188.svg",
     "static/media/javascript.svg": "/static/media/javascript.2d2e31cc.svg",
-    "static/media/logow.png": "/static/media/logow.f5f9574b.png",
     "static/media/material-ui-1.svg": "/static/media/material-ui-1.82291019.svg",
-    "static/media/mern_tip_calc.webp": "/static/media/mern_tip_calc.3ea10fb6.webp",
     "static/media/mongodb.svg": "/static/media/mongodb.2985235d.svg",
     "static/media/mssql.svg": "/static/media/mssql.54d7bddc.svg",
     "static/media/nodejs.svg": "/static/media/nodejs.a1231528.svg",
@@ -54,8 +53,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.afba7e97.js",
-    "static/js/2.3711188f.chunk.js",
-    "static/css/main.c58d94b7.chunk.css",
-    "static/js/main.5fcb128d.chunk.js"
+    "static/js/2.5a751a55.chunk.js",
+    "static/css/main.afd9fea0.chunk.css",
+    "static/js/main.194c05f1.chunk.js"
   ]
 }
