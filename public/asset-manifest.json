@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.afd9fea0.chunk.css",
-    "main.js": "/static/js/main.194c05f1.chunk.js",
-    "main.js.map": "/static/js/main.194c05f1.chunk.js.map",
+    "main.js": "/static/js/main.46e5ef0c.chunk.js",
+    "main.js.map": "/static/js/main.46e5ef0c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.afba7e97.js",
     "runtime-main.js.map": "/static/js/runtime-main.afba7e97.js.map",
     "static/js/2.5a751a55.chunk.js": "/static/js/2.5a751a55.chunk.js",
     "static/js/2.5a751a55.chunk.js.map": "/static/js/2.5a751a55.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.272c272d375b5ff943783ac5e55d669e.js": "/precache-manifest.272c272d375b5ff943783ac5e55d669e.js",
+    "precache-manifest.0d62c2f658390d8b065663fa38c5a838.js": "/precache-manifest.0d62c2f658390d8b065663fa38c5a838.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.afd9fea0.chunk.css.map": "/static/css/main.afd9fea0.chunk.css.map",
     "static/js/2.5a751a55.chunk.js.LICENSE.txt": "/static/js/2.5a751a55.chunk.js.LICENSE.txt",
-    "static/media/Fortnite-Project.png": "/static/media/Fortnite-Project.5e467236.png",
+    "static/media/Fortnite-Project.png": "/static/media/Fortnite-Project.3da908cd.png",
     "static/media/Robofriends.webp": "/static/media/Robofriends.9730fefc.webp",
     "static/media/Translate-Project.png": "/static/media/Translate-Project.ddc80b55.png",
     "static/media/accenture-3.svg": "/static/media/accenture-3.21999f09.svg",
@@ -55,6 +55,6 @@
     "static/js/runtime-main.afba7e97.js",
     "static/js/2.5a751a55.chunk.js",
     "static/css/main.afd9fea0.chunk.css",
-    "static/js/main.194c05f1.chunk.js"
+    "static/js/main.46e5ef0c.chunk.js"
   ]
 }

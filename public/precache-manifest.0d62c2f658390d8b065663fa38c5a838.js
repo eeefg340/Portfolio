@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "294edf1224a4af3a2471ed0de820bd4e",
+    "revision": "b5dfe5015666beca05461e70a00d0b8e",
     "url": "/index.html"
   },
   {
-    "revision": "02154cc55bed19ebb14c",
+    "revision": "cccd547b9d7fe79804ad",
     "url": "/static/css/main.afd9fea0.chunk.css"
   },
   {
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.5a751a55.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "02154cc55bed19ebb14c",
-    "url": "/static/js/main.194c05f1.chunk.js"
+    "revision": "cccd547b9d7fe79804ad",
+    "url": "/static/js/main.46e5ef0c.chunk.js"
   },
   {
     "revision": "1f694fd7580affc931a3",
     "url": "/static/js/runtime-main.afba7e97.js"
   },
   {
-    "revision": "5e46723648e67d94115c20212db78d85",
-    "url": "/static/media/Fortnite-Project.5e467236.png"
+    "revision": "3da908cdb409e4b48821cfa7468dd934",
+    "url": "/static/media/Fortnite-Project.3da908cd.png"
   },
   {
     "revision": "9730fefc26bb187c4f4bb29b95d82e7a",
