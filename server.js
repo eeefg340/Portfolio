@@ -51,7 +51,7 @@ app.use(
 
 app.use(morgan("dev")); // log every request to the console
 
-const root = require("path").join(__dirname, "/client/build");
+const root = require("path").join(__dirname, "/public");
 app.use(express.static(root));
 app.get("/", (req, res) => {
   res.sendFile("index.html", { root });

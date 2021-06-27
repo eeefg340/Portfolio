@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.afd9fea0.chunk.css",
-    "main.js": "/static/js/main.99c8718a.chunk.js",
-    "main.js.map": "/static/js/main.99c8718a.chunk.js.map",
+    "main.js": "/static/js/main.76dd23fd.chunk.js",
+    "main.js.map": "/static/js/main.76dd23fd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.afba7e97.js",
     "runtime-main.js.map": "/static/js/runtime-main.afba7e97.js.map",
-    "static/js/2.61bdeff3.chunk.js": "/static/js/2.61bdeff3.chunk.js",
-    "static/js/2.61bdeff3.chunk.js.map": "/static/js/2.61bdeff3.chunk.js.map",
+    "static/js/2.781fb3e1.chunk.js": "/static/js/2.781fb3e1.chunk.js",
+    "static/js/2.781fb3e1.chunk.js.map": "/static/js/2.781fb3e1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.506d7ed25d39ca2df45df6b413ef4e6d.js": "/precache-manifest.506d7ed25d39ca2df45df6b413ef4e6d.js",
+    "precache-manifest.7d2a6e2a739fb35cfb112d259c1e5b1a.js": "/precache-manifest.7d2a6e2a739fb35cfb112d259c1e5b1a.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.afd9fea0.chunk.css.map": "/static/css/main.afd9fea0.chunk.css.map",
-    "static/js/2.61bdeff3.chunk.js.LICENSE.txt": "/static/js/2.61bdeff3.chunk.js.LICENSE.txt",
+    "static/js/2.781fb3e1.chunk.js.LICENSE.txt": "/static/js/2.781fb3e1.chunk.js.LICENSE.txt",
     "static/media/Fortnite-Project.png": "/static/media/Fortnite-Project.3da908cd.png",
     "static/media/Robofriends.webp": "/static/media/Robofriends.9730fefc.webp",
     "static/media/Translate-Project.png": "/static/media/Translate-Project.ddc80b55.png",
@@ -53,8 +53,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.afba7e97.js",
-    "static/js/2.61bdeff3.chunk.js",
+    "static/js/2.781fb3e1.chunk.js",
     "static/css/main.afd9fea0.chunk.css",
-    "static/js/main.99c8718a.chunk.js"
+    "static/js/main.76dd23fd.chunk.js"
   ]
 }
