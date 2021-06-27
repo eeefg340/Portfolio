@@ -38,12 +38,11 @@ import { api } from "../Api/Api";
 const TimeLine = () => {
   const [CountLikeProjectOne, setCountLikeProjectOne] = useState(0);
   const [CountLikeProjectTwo, setCountLikeProjectTwo] = useState(0);
-  const [CountLikeProjectThree, setCountLikeProjectThree] = useState(0);
+  // const [CountLikeProjectThree, setCountLikeProjectThree] = useState(0);
   const [ResStatus, setStatus] = useState(null);
 
-  const SaveLike = async (id, like, unlikev) => {
+  const SaveLike = async (id) => {
     const config = {
-      Like: 1,
       Projectid: id,
       LikeId: localStorage.id,
     };
@@ -53,23 +52,23 @@ const TimeLine = () => {
       setStatus(response.status);
     } catch (e) {
       console.error(e);
+      alert(e.response.data.err);
     }
   };
 
   const DisplayTotalLikes = async () => {
     try {
-      const Response = await axios.get(`${api}GetAllLikes`);
+      const Response = await axios.get(`${api}all/GetAllLikes`);
       setCountLikeProjectOne(Response.data[0].Likes);
       setCountLikeProjectTwo(Response.data[1].Likes);
-      setCountLikeProjectThree(Response.data[2].Likes);
+      // setCountLikeProjectThree(Response.data[2].Likes);
     } catch (e) {
-      console.error(e);
+      console.log(e);
     }
   };
 
   useEffect(() => {
     DisplayTotalLikes();
-    setStatus(null);
   }, [ResStatus == 200]);
   return (
     <div id="projects">
@@ -331,12 +330,12 @@ const TimeLine = () => {
                 </Accordion>
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
-                {/* <UrlButton
-                  href="https://akjha96.github.io/Todo-List-React/"
+                <UrlButton
+                  href="https://fortnite-project.herokuapp.com/"
                   target="_blank"
                 >
                   SEE LIVE
-                </UrlButton> */}
+                </UrlButton>
                 <UrlButton
                   href="https://github.com/eeefg650/Fortnite-project"
                   target="_blank"

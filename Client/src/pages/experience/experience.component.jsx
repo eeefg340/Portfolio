@@ -37,7 +37,7 @@ const Experience = () => {
                       Full Stack web Developer
                     </strong>
                     <br />
-                    <strong>Technology:</strong> React JS,Context API, Node js,
+                    <strong>Technology:</strong> React JS,hooks, Node js,
                     express.js, MongoDB
                     <br />
                     <strong>Duration:</strong> June 2019 - Present

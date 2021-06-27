@@ -16,6 +16,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import { api } from "../../components/Api/Api";
 import axios from "axios";
+import CircularProgress from "@material-ui/core/CircularProgress";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -44,9 +45,18 @@ const ContactForm = () => {
   const [Email, setEmail] = useState("");
   const [Subject, setSubject] = useState("");
   const [TextArea, setTextArea] = useState("");
+  const [error, setError] = useState("");
+  const [Success, setSuccess] = useState(false);
+  const [SuccessMsg, setSuccessMsg] = useState("");
+  const [Loading, setLoading] = useState(false);
 
   const SendForm = async (e) => {
     e.preventDefault();
+    const options = {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
 
     const PayLoad = {
       FirstName: FirstName,
@@ -55,8 +65,19 @@ const ContactForm = () => {
       Subject: Subject,
       TextArea: TextArea,
     };
-    const response = await axios.post(`${api}mail`, PayLoad);
-    console.log(response.data)
+
+    try {
+      setLoading(true);
+      const response = await axios.post(`${api}mail`, PayLoad, options);
+      setSuccessMsg(response.data.msg);
+      setSuccess(response.data.Success);
+      setLoading(false);
+    } catch (e) {
+      console.log(e.message);
+      setError(e.response.data.err);
+      setSuccess(false)
+      setLoading(false);
+    }
   };
 
   return (
@@ -82,6 +103,7 @@ const ContactForm = () => {
                         name="firstName"
                         onChange={(e) => setFirstName(e.target.value)}
                         variant="outlined"
+                        disabled={Success}
                         required
                         fullWidth
                         id="firstName"
@@ -93,6 +115,7 @@ const ContactForm = () => {
                       <TextField
                         variant="outlined"
                         required
+                        disabled={Success}
                         onChange={(e) => setLastName(e.target.value)}
                         fullWidth
                         id="lastName"
@@ -105,6 +128,7 @@ const ContactForm = () => {
                       <TextField
                         variant="outlined"
                         required
+                        disabled={Success}
                         fullWidth
                         onChange={(e) => setEmail(e.target.value)}
                         id="email"
@@ -117,6 +141,7 @@ const ContactForm = () => {
                       <TextField
                         variant="outlined"
                         required
+                        disabled={Success}
                         onChange={(e) => setSubject(e.target.value)}
                         fullWidth
                         name="subject"
@@ -129,6 +154,7 @@ const ContactForm = () => {
                         aria-label="minimum height"
                         onChange={(e) => setTextArea(e.target.value)}
                         rowsMin={2}
+                        disabled={Success}
                         cl
                         placeholder="Give me more information I need to know"
                       />
@@ -137,6 +163,7 @@ const ContactForm = () => {
                   <Button
                     type="submit"
                     fullWidth
+                    disabled={Success}
                     variant="contained"
                     color="primary"
                     className={classes.submit}
@@ -144,6 +171,17 @@ const ContactForm = () => {
                     Send
                   </Button>
                 </form>
+
+                {Success ? (
+                  <div style={{ color: "green", textAlign: "center" }}>
+                    {SuccessMsg}
+                  </div>
+                ) : (
+                  <div style={{ color: "red", textAlign: "center" }}>
+                    {error}
+                  </div>
+                )}
+                {Loading ? <CircularProgress /> : null}
               </div>
             </Container>
           </Col>

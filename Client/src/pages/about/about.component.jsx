@@ -37,7 +37,7 @@ const About = () => {
                 technologies I work with are: client side: react,library of react
                 ui. on the server side node js mongodb. Loves to learn new things
                 on my own all the time and i always Improves my skills. I live
-                and breathe the web world.
+                and breathe the web app development world.
                 <br /> <br />
                 <Col className="d-flex justify-content-center flex-wrap">
                   <div>

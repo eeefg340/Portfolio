@@ -85,12 +85,12 @@ export const skills = {
       imgSrc: L_REACT_BOOTSTRAP,
       skillName: "React Bootstrap",
     },
-    {
-      link: "https://styled-components.com/",
-      imgAltText: "styled-components",
-      imgSrc: L_STYLED_COMPONENTS,
-      skillName: "styled-components",
-    },
+    // {
+    //   link: "https://styled-components.com/",
+    //   imgAltText: "styled-components",
+    //   imgSrc: L_STYLED_COMPONENTS,
+    //   skillName: "styled-components",
+    // },
   ],
 
   backend: [
@@ -121,7 +121,7 @@ export const skills = {
       link: "https://pages.github.com/",
       imgAltText: "GitHub Pages",
       imgSrc: L_GITHUB_PAGES,
-      skillName: "GitHub Pages",
+      skillName: "GitHub",
     },
   ],
   programmingLanguages: [
@@ -134,12 +134,12 @@ export const skills = {
   ],
   databases: [
 
-    {
-      link: "https://www.microsoft.com/en-us/sql-server/sql-server-2019",
-      imgAltText: "My-SQL",
-      imgSrc: L_MSSQL,
-      skillName: "My-SQL",
-    },
+    // {
+    //   link: "https://www.microsoft.com/en-us/sql-server/sql-server-2019",
+    //   imgAltText: "My-SQL",
+    //   imgSrc: L_MSSQL,
+    //   skillName: "My-SQL",
+    // },
     {
       link: "https://www.mongodb.com/",
       imgAltText: "MongoDB",

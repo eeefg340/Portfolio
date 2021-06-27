@@ -1,59 +1,56 @@
 const express = require("express");
 const Router = express.Router();
-
 const nodemailer = require("nodemailer");
 require("dotenv").config();
-// const ContactModels = require("../models/Contacts");
+const { BodyPromise } = require("../Promise/BodyPromise");
 
-Router.post("/mail", (req, res) => {
+Router.post("/mail", async (req, res) => {
   const body = req.body;
-  let Promises = [body.FirstName, body.LastName, body.Email, body.Subject];
 
-  console.log(body);
+  try {
+    await BodyPromise(body);
 
+    let transport = nodemailer.createTransport({
+      service: "Gmail",
 
-  async function CheckBody() {
-    try {
-        Promise.all(
-            Promises.map(async (x) => {
-                console.log(x)
-            })
-        )
-      
+      auth: {
+        user: process.env.USER,
+        pass: process.env.PASS,
+      },
+    });
 
-      let transport = nodemailer.createTransport({
-        service: "Gmail",
-
-        auth: {
-          user: process.env.USER,
-          pass: process.env.PASS,
-        },
-      });
-
-      let mailOptions = {
-        from: "naor0003@gmail.com",
-        to: "dinroda123@gmail.com",
-        subject: "פניה חדשה",
-        text: `פנייה חדשה מתוך תיק העבודות : 
+    let mailOptions = {
+      from: "naor0003@gmail.com",
+      to: "dinroda123@gmail.com",
+      subject: "פניה חדשה",
+      text: `פנייה חדשה מתוך תיק העבודות : 
         שם פרטי: ${body.FirstName}
         שם משפחה: ${body.LastName}
         מייל: ${body.Email}
         נושא: ${body.Subject}
         פרטים נוספים: ${body.TextArea}`,
-      };
+    };
 
-      transport.sendMail(mailOptions, function (err, data) {
-        if (err) {
-          console.log("Error Occurs", err);
-        } else {
-          console.log("Email sent!!");
-        }
+    transport.sendMail(mailOptions, function (err, data) {
+      if (err) throw new TypeError(err);
+      res.status(200).json({
+        msg: "The mail sent successfully",
+        Success: true,
       });
-    } catch (e) {
-      console.error(e.message);
+    });
+  } catch (e) {
+    if (e instanceof TypeError) {
+      res.status(500).json({
+        err: "Send mail was faild.. try again",
+        Success: false,
+      });
     }
+    console.error(e.message);
+    res.status(400).json({
+      err: "Pleaze complete all  fields",
+      Success: false,
+    });
   }
-  CheckBody();
 });
 
 module.exports = Router;

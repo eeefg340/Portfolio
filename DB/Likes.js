@@ -27,6 +27,9 @@ const UniqidSchema = new Schema({
     type: Number,
     required: true,
   },
+  CountLikeClick: {
+    type: Number,
+  },
 
   // Likes: {
   //   type: Number,

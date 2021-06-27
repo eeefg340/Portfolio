@@ -21,13 +21,26 @@ const Skills = () => {
             <Card className="focus mt-2 mb-2">
               <Card.Body>
                 {/* Frontend */}
-                <Card.Title className="text-center  card-title">Frontend</Card.Title>
+                <Card.Title className="text-center  card-title">
+                  Frontend
+                </Card.Title>
                 <hr />
                 <Card.Text className="card-text d-flex justify-content-start flex-column">
                   {skills.frontend.map((skill, index) => (
                     <span className="p-2" key={index}>
-                      <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style m-1"></Image> {skill.skillName}
+                      <a
+                        className="text-dark text-decoration-none"
+                        href={skill.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Image
+                          src={skill.imgSrc}
+                          alt={skill.imgAltText}
+                          rounded
+                          className="image-style m-1"
+                        ></Image>{" "}
+                        {skill.skillName}
                       </a>
                     </span>
                   ))}
@@ -40,13 +53,26 @@ const Skills = () => {
           <Col md={4}>
             <Card className="focus mt-2 mb-2">
               <Card.Body>
-                <Card.Title className="text-center  card-title">Backend</Card.Title>
+                <Card.Title className="text-center  card-title">
+                  Backend
+                </Card.Title>
                 <hr />
                 <Card.Text className="card-text d-flex justify-content-start flex-column">
                   {skills.backend.map((skill, index) => (
                     <span className="p-2" key={index}>
-                      <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style m-1"></Image> {skill.skillName}
+                      <a
+                        className="text-dark text-decoration-none"
+                        href={skill.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Image
+                          src={skill.imgSrc}
+                          alt={skill.imgAltText}
+                          rounded
+                          className="image-style m-1"
+                        ></Image>{" "}
+                        {skill.skillName}
                       </a>
                     </span>
                   ))}
@@ -57,13 +83,26 @@ const Skills = () => {
             {/* Hosting Platforms */}
             <Card className="focus mt-2 mb-2 ">
               <Card.Body>
-                <Card.Title className="text-center  card-title">Hosting Platforms</Card.Title>
+                <Card.Title className="text-center  card-title">
+                  Hosting Platforms
+                </Card.Title>
                 <hr />
                 <Card.Text className="card-text d-flex justify-content-start flex-column">
                   {skills.hostingPlatforms.map((skill, index) => (
                     <span className="p-2" key={index}>
-                      <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style m-1"></Image> {skill.skillName}
+                      <a
+                        className="text-dark text-decoration-none"
+                        href={skill.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Image
+                          src={skill.imgSrc}
+                          alt={skill.imgAltText}
+                          rounded
+                          className="image-style m-1"
+                        ></Image>{" "}
+                        {skill.skillName}
                       </a>
                     </span>
                   ))}
@@ -76,13 +115,26 @@ const Skills = () => {
           <Col md={4}>
             <Card className="focus mt-2 mb-2">
               <Card.Body>
-                <Card.Title className="text-center  card-title">Programming Languages</Card.Title>
+                <Card.Title className="text-center  card-title">
+                  Programming Languages
+                </Card.Title>
                 <hr />
                 <Card.Text className="card-text d-flex justify-content-start flex-column">
                   {skills.programmingLanguages.map((skill, index) => (
                     <span className="p-2" key={index}>
-                      <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style m-1"></Image> {skill.skillName}
+                      <a
+                        className="text-dark text-decoration-none"
+                        href={skill.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Image
+                          src={skill.imgSrc}
+                          alt={skill.imgAltText}
+                          rounded
+                          className="image-style m-1"
+                        ></Image>{" "}
+                        {skill.skillName}
                       </a>
                     </span>
                   ))}
@@ -94,13 +146,26 @@ const Skills = () => {
 
             <Card className="focus mt-2 mb-2">
               <Card.Body>
-                <Card.Title className="text-center  card-title">Database</Card.Title>
+                <Card.Title className="text-center  card-title">
+                  Database
+                </Card.Title>
                 <hr />
                 <Card.Text className="card-text d-flex justify-content-start flex-column">
                   {skills.databases.map((skill, index) => (
                     <span className="p-2" key={index}>
-                      <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <Image src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style m-1"></Image> {skill.skillName}
+                      <a
+                        className="text-dark text-decoration-none"
+                        href={skill.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Image
+                          src={skill.imgSrc}
+                          alt={skill.imgAltText}
+                          rounded
+                          className="image-style m-1"
+                        ></Image>{" "}
+                        {skill.skillName}
                       </a>
                     </span>
                   ))}
