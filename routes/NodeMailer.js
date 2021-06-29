@@ -11,19 +11,18 @@ Router.post("/mail", async (req, res) => {
     await BodyPromise(body);
 
     let transport = nodemailer.createTransport({
-      host: "smtp.office365.com", // hostname
-      port: 587, // port for secure SMTP
+      service: "Gmail",
+      host: 'smtp.gmail.com',
+      secure: true,
 
       auth: {
-        user: "odmail@odtranslate.co.il",
-        pass: "Osnat1308",
+        user: `${process.env.USER}`,
+        pass: `${process.env.PASS}`,
       },
-      logger: true,
-      debug: true, // include SMTP traffic in the logs
     });
 
     let mailOptions = {
-      from: "odmail@odtranslate.co.il",
+      from: `${process.env.USER}`,
       to: "dinroda123@gmail.com",
       subject: "פניה חדשה",
       text: `פנייה חדשה מתוך תיק העבודות : 
