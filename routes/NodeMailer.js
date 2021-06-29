@@ -12,7 +12,7 @@ Router.post("/mail", async (req, res) => {
 
     let transport = nodemailer.createTransport({
       service: "Gmail",
-      secure: true,
+      secure: false,
       auth: {
         user: `${process.env.USER}`,
         pass: `${process.env.PASS}`,
