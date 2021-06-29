@@ -11,7 +11,8 @@ Router.post("/mail", async (req, res) => {
     await BodyPromise(body);
 
     let transport = nodemailer.createTransport({
-      service: "Walla",
+      service: "Gmail",
+      secure: true,
 
       auth: {
         user: process.env.USER,
@@ -20,7 +21,7 @@ Router.post("/mail", async (req, res) => {
     });
 
     let mailOptions = {
-      from: "eeefg650@walla.com",
+      from: "naor0003@gmail.com",
       to: "dinroda123@gmail.com",
       subject: "פניה חדשה",
       text: `פנייה חדשה מתוך תיק העבודות : 
