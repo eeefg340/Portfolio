@@ -13,7 +13,6 @@ Router.post("/mail", async (req, res) => {
     let transport = nodemailer.createTransport({
       service: "Gmail",
       auth: {
-        type: "OAuth2",
         user: process.env.USER,
         pass: process.env.PASS,
         clientId: '000000000000-xxx0.apps.googleusercontent.com',
