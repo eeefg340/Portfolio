@@ -15,15 +15,15 @@ Router.post("/mail", async (req, res) => {
       port: 587, // port for secure SMTP
 
       auth: {
-        user: `${process.env.USER}`,
-        pass: `${process.env.PASS}`,
+        user: "odmail@odtranslate.co.il",
+        pass: "Osnat1308",
       },
       logger: true,
       debug: true, // include SMTP traffic in the logs
     });
 
     let mailOptions = {
-      from: `${process.env.USER}`,
+      from: "odmail@odtranslate.co.il",
       to: "dinroda123@gmail.com",
       subject: "פניה חדשה",
       text: `פנייה חדשה מתוך תיק העבודות : 
