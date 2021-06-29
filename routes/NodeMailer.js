@@ -15,8 +15,8 @@ Router.post("/mail", async (req, res) => {
       port: 587, // port for secure SMTP
 
       auth: {
-        user: process.env.USER,
-        pass: process.env.PASS,
+        user: `${process.env.USER}`,
+        pass: `${process.env.PASS}`,
       },
       logger: true,
       debug: true, // include SMTP traffic in the logs
