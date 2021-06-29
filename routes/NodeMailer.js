@@ -11,20 +11,16 @@ Router.post("/mail", async (req, res) => {
     await BodyPromise(body);
 
     let transport = nodemailer.createTransport({
-      service: "Gmail",
+      service: "Walla",
+
       auth: {
         user: process.env.USER,
         pass: process.env.PASS,
-        clientId: '000000000000-xxx0.apps.googleusercontent.com',
-        clientSecret: 'XxxxxXXxX0xxxxxxxx0XXxX0',
-        refreshToken: '1/XXxXxsss-xxxXXXXXxXxx0XXXxxXXx0x00xxx',
-        accessToken: 'ya29.Xx_XX0xxxxx-xX0X0XxXXxXxXXXxX0x',
-        expires: 1484314697598
       },
     });
 
     let mailOptions = {
-      from: "naor0003@gmail.com",
+      from: "eeefg650@walla.com",
       to: "dinroda123@gmail.com",
       subject: "פניה חדשה",
       text: `פנייה חדשה מתוך תיק העבודות : 
