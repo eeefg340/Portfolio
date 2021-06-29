@@ -14,7 +14,7 @@ const GetArrayLikesId = async (req, res, next) => {
 
 const CheckIfUserRemoveLike = async (req, res, next) => {
   const body = req.body;
-  const RemoveLike = 0;
+  const RemoveLike = - 1;
   const CheckProjectIDfromDB = req.IdLikes.map((DB) => {
     return DB.Projectid;
   });
@@ -22,7 +22,7 @@ const CheckIfUserRemoveLike = async (req, res, next) => {
     if (Number(CheckProjectIDfromDB) === body.Projectid) {
       await Likes.updateOne(
         { Projectid: body.Projectid },
-        { $set: { Likes: RemoveLike } }
+        { $inc: { Likes: RemoveLike} }
       );
       await UniqID.deleteOne({ uniqIdLike: body.LikeId });
       throw new Error();
