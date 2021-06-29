@@ -11,17 +11,15 @@ Router.post("/mail", async (req, res) => {
     await BodyPromise(body);
 
     let transport = nodemailer.createTransport({
-      host: "smtp-mail.outlook.com", // hostname
-      secureConnection: false, // TLS requires secureConnection to be false
+      host: "smtp.office365.com", // hostname
       port: 587, // port for secure SMTP
-      tls: {
-        ciphers: "SSLv3",
-      },
 
       auth: {
         user: process.env.USER,
         pass: process.env.PASS,
       },
+      logger: true,
+      debug: true, // include SMTP traffic in the logs
     });
 
     let mailOptions = {
