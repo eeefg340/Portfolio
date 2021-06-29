@@ -11,19 +11,12 @@ Router.post("/mail", async (req, res) => {
     await BodyPromise(body);
 
     let transport = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 465,
-
+      service: "Gmail",
       secure: true,
-
       auth: {
         user: `${process.env.USER}`,
         pass: `${process.env.PASS}`,
       },
-      tls: {
-        // do not fail on invalid certs
-        rejectUnauthorized: false
-    }
     });
 
     let mailOptions = {
