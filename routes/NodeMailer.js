@@ -11,19 +11,19 @@ Router.post("/mail", async (req, res) => {
     await BodyPromise(body);
 
     let transport = nodemailer.createTransport({
-      service: "gmail",
+      service: "Gmail",
       auth: {
         type: "OAuth2",
-        user: `${process.env.USER}`,
-        pass: `${process.env.PASS}`,
-        clientId: `${process.env.OAUTH_CLIENTID}`,
-        clientSecret: `${process.env.OAUTH_CLIENT_SECRET}`,
-        refreshToken: `${process.env.OAUTH_REFRESH_TOKEN}`,
+        user: process.env.USER,
+        pass: process.env.PASS,
+        clientId: process.env.OAUTH_CLIENTID,
+        clientSecret: process.env.OAUTH_CLIENT_SECRET,
+        refreshToken: process.env.OAUTH_REFRESH_TOKEN,
       },
     });
 
     let mailOptions = {
-      from: `${process.env.USER}`,
+      from: "naor0003@gmail.com",
       to: "dinroda123@gmail.com",
       subject: "פניה חדשה",
       text: `פנייה חדשה מתוך תיק העבודות : 
@@ -36,7 +36,6 @@ Router.post("/mail", async (req, res) => {
 
     transport.sendMail(mailOptions, function (err, data) {
       if (err) throw new TypeError(err);
-      console.log(data);
       res.status(200).json({
         msg: "The mail sent successfully",
         Success: true,
