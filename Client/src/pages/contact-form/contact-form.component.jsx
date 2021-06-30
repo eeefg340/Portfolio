@@ -75,7 +75,7 @@ const ContactForm = () => {
     } catch (e) {
       console.log(e.message);
       setError(e.response.data.err);
-      setSuccess(false)
+      setSuccess(false);
       setLoading(false);
     }
   };
