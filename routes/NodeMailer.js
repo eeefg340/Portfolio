@@ -9,15 +9,16 @@ Router.post("/mail", async (req, res) => {
 
   try {
     await BodyPromise(body);
-    let testAccount = await nodemailer.createTestAccount();
 
     let transport = nodemailer.createTransport({
-      host: "smtp.ethereal.email",
-      port: 465,
-      secure: true, // true for 465, false for other ports
+      service: "gmail",
       auth: {
-        user: testAccount.user, // generated ethereal user
-        pass: testAccount.pass, // generated ethereal password
+        type: "OAuth2",
+        user: process.env.USER,
+        pass: process.env.PASS,
+        clientId: process.env.OAUTH_CLIENTID,
+        clientSecret: process.env.OAUTH_CLIENT_SECRET,
+        refreshToken: process.env.OAUTH_REFRESH_TOKEN,
       },
     });
 
@@ -35,6 +36,7 @@ Router.post("/mail", async (req, res) => {
 
     transport.sendMail(mailOptions, function (err, data) {
       if (err) throw new TypeError(err);
+      console.log(data);
       res.status(200).json({
         msg: "The mail sent successfully",
         Success: true,
