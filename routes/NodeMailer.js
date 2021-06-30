@@ -23,7 +23,7 @@ Router.post("/mail", async (req, res) => {
     });
 
     let mailOptions = {
-      from: "naor0003@gmail.com",
+      from: `${process.env.USER}`,
       to: "dinroda123@gmail.com",
       subject: "פניה חדשה",
       text: `פנייה חדשה מתוך תיק העבודות : 
