@@ -14,11 +14,11 @@ Router.post("/mail", async (req, res) => {
       service: "gmail",
       auth: {
         type: "OAuth2",
-        user: process.env.USER,
-        pass: process.env.PASS,
-        clientId: process.env.OAUTH_CLIENTID,
-        clientSecret: process.env.OAUTH_CLIENT_SECRET,
-        refreshToken: process.env.OAUTH_REFRESH_TOKEN,
+        user: `${process.env.USER}`,
+        pass: `${process.env.PASS}`,
+        clientId: `${process.env.OAUTH_CLIENTID}`,
+        clientSecret: `${process.env.OAUTH_CLIENT_SECRET}`,
+        refreshToken: `${process.env.OAUTH_REFRESH_TOKEN}`,
       },
     });
 
