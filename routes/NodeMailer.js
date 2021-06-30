@@ -11,16 +11,12 @@ Router.post("/mail", async (req, res) => {
     await BodyPromise(body);
 
     let transport = nodemailer.createTransport({
-      service: "Gmail",
-      secure: false,
-      auth: {
-        user: `${process.env.USER}`,
-        pass: `${process.env.PASS}`,
-      },
+      host: "smtp.ethereal.email",
+      port: 587,
     });
 
     let mailOptions = {
-      from: `${process.env.USER}`,
+      from: "admin@node.com",
       to: "dinroda123@gmail.com",
       subject: "פניה חדשה",
       text: `פנייה חדשה מתוך תיק העבודות : 
