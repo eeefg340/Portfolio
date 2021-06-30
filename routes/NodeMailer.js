@@ -9,10 +9,16 @@ Router.post("/mail", async (req, res) => {
 
   try {
     await BodyPromise(body);
+    let testAccount = await nodemailer.createTestAccount();
 
     let transport = nodemailer.createTransport({
       host: "smtp.ethereal.email",
       port: 587,
+      secure: false, // true for 465, false for other ports
+      auth: {
+        user: testAccount.user, // generated ethereal user
+        pass: testAccount.pass, // generated ethereal password
+      },
     });
 
     let mailOptions = {
