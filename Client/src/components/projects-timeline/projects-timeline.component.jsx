@@ -66,10 +66,13 @@ const TimeLine = () => {
       console.log(e);
     }
   };
-
   useEffect(() => {
     DisplayTotalLikes();
-  }, [ResStatus == 200 || ResStatus == 201]);
+  }, [ResStatus === 200]);
+  useEffect(() => {
+    DisplayTotalLikes();
+  }, [ResStatus === 201]);
+
   return (
     <div id="projects">
       <h1 className="pt-3 text-center font-details-b pb-3">PROJECTS</h1>
