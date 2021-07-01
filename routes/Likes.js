@@ -8,24 +8,21 @@ const {
   CheckIfUserSelectedLike,
 } = require("../middleware/CheckingLikes");
 
-function UniqPressLike() {
-  return (
-    Math.random().toString(16).slice(15) +
-    new Date().getTime() +
-    Math.random().toString(16).slice(15)
-  );
-}
-
 Router.use(GetArrayLikesId);
 Router.use(CheckIfUserRemoveLike);
 Router.use(CheckIfUserSelectedLike);
 
 Router.post("/like", async (req, res) => {
+  function UniqPressLike() {
+    return (
+      Math.random().toString(16).slice(15) +
+      new Date().getTime() +
+      Math.random().toString(16).slice(15)
+    );
+  }
   try {
     const body = req.body;
     const AddLike = 1;
-
-    console.log("__Start___");
 
     await Likes.updateOne(
       { Projectid: body.Projectid },
@@ -37,8 +34,6 @@ Router.post("/like", async (req, res) => {
       Projectid: body.Projectid,
     });
     await NewUniqid.save();
-    console.log("_saved_");
-
     res.status(200).json(NewUniqid);
   } catch (err) {
     console.error(err.message);
