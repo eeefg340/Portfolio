@@ -74,6 +74,4 @@ app.use(function (req, res, next) {
 });
 
 const port = process.env.PORT || 5000;
-app.listen(port, () => {
-  console.log(`nodemailerProject is listening at http://localhost:${port}`)
-})
+app.listen(port, () => console.log(`server listening on port ${port}`));
