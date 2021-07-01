@@ -1,5 +1,5 @@
 require("dotenv").config();
 
-dbPassword = `${process.env.DBKEY}`;
+dbPassword = process.env.DBKEY;
 
 module.exports = dbPassword;
