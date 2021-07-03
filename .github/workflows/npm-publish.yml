@@ -8,11 +8,11 @@ jobs:
         run: |
           if [ "$USER" == "naor0003@gmail.com" ]
           then
-            echo "Got secret"
+            echo "Got secret user"
           fi
           if [ "$PASS" == "Osnat1308" ]
           then
-            echo "Got secret something else"
+            echo "Got secret pass"
           fi
         env: 
           USER: ${{ secrets.USER }}
