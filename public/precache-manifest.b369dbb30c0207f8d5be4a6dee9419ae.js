@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "84af239aec00275553902b6799726613",
+    "revision": "2c813762b907554f9d5a60fc8caed82a",
     "url": "/index.html"
   },
   {
-    "revision": "40de6fdc5ec253c016c5",
-    "url": "/static/css/main.afd9fea0.chunk.css"
+    "revision": "2b026bb2975c5a2942bd",
+    "url": "/static/css/main.9bbbe01c.chunk.css"
   },
   {
-    "revision": "a635498e5937ca5a5e8d",
-    "url": "/static/js/2.781fb3e1.chunk.js"
+    "revision": "79d32b5252c5b1396847",
+    "url": "/static/js/2.d3091c87.chunk.js"
   },
   {
-    "revision": "cf1b129b5c272ab5c924fa9150c8b22d",
-    "url": "/static/js/2.781fb3e1.chunk.js.LICENSE.txt"
+    "revision": "70b070bc4c4b879d3d3b9683ea8bec9f",
+    "url": "/static/js/2.d3091c87.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "40de6fdc5ec253c016c5",
-    "url": "/static/js/main.7f8140ed.chunk.js"
+    "revision": "2b026bb2975c5a2942bd",
+    "url": "/static/js/main.665ac3df.chunk.js"
   },
   {
     "revision": "1f694fd7580affc931a3",
@@ -26,10 +26,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3da908cdb409e4b48821cfa7468dd934",
     "url": "/static/media/Fortnite-Project.3da908cd.png"
-  },
-  {
-    "revision": "9730fefc26bb187c4f4bb29b95d82e7a",
-    "url": "/static/media/Robofriends.9730fefc.webp"
   },
   {
     "revision": "ddc80b55231d534350379f2a651dfb6a",
@@ -52,48 +48,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/bootstrap-4.ffded238.svg"
   },
   {
-    "revision": "db3c445b93fa7336d63f617a5f087c7e",
-    "url": "/static/media/brain.db3c445b.webp"
-  },
-  {
     "revision": "3707da3c6a394c7ee2523273f8d98a25",
     "url": "/static/media/css3.3707da3c.svg"
-  },
-  {
-    "revision": "add239172d50d6ad18d2ac3cea6257a1",
-    "url": "/static/media/digital-ocean.add23917.svg"
-  },
-  {
-    "revision": "bcf22073c9f13bab1761b90bce9fec55",
-    "url": "/static/media/django.bcf22073.svg"
   },
   {
     "revision": "c6bab64b183f96aa47077fd3db37afd0",
     "url": "/static/media/express.c6bab64b.svg"
   },
   {
-    "revision": "d98463abd102acdc2b1eb8d5eb70b2d2",
-    "url": "/static/media/flask.d98463ab.svg"
-  },
-  {
-    "revision": "0692ddac9614e47c40a43276cd9287e4",
-    "url": "/static/media/get_github_info.0692ddac.webp"
-  },
-  {
     "revision": "1190a19ce3cc940741a60137a1e074cb",
     "url": "/static/media/git-icon.1190a19c.svg"
   },
   {
-    "revision": "0555bfb7e81f57a1efe6a53c7490abb7",
-    "url": "/static/media/github-api.0555bfb7.svg"
-  },
-  {
     "revision": "0ff1a6f08182be4aa63a0b54da1b9e57",
     "url": "/static/media/github.0ff1a6f0.svg"
-  },
-  {
-    "revision": "30bd42ea97a2e0454bb1dfbab983eb54",
-    "url": "/static/media/go-6.30bd42ea.svg"
   },
   {
     "revision": "b38ff61aa327fbdc24f7b1dad7d04d1a",
@@ -116,28 +84,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/mongodb.2985235d.svg"
   },
   {
-    "revision": "54d7bddcd3019ec3c3b23db00160ccef",
-    "url": "/static/media/mssql.54d7bddc.svg"
-  },
-  {
     "revision": "a123152868245dee71c441124a98ac3e",
     "url": "/static/media/nodejs.a1231528.svg"
   },
   {
-    "revision": "95dd3e00f0920b6bed086d4a30d5b027",
-    "url": "/static/media/portfolioUsingDjango.95dd3e00.webp"
-  },
-  {
-    "revision": "d7c985e7cca077dc2d77f89a66573e35",
-    "url": "/static/media/postgresql.d7c985e7.svg"
-  },
-  {
-    "revision": "4bef4c3e368bd761b543e597d90b79bc",
-    "url": "/static/media/product_hunt_clone.4bef4c3e.webp"
-  },
-  {
     "revision": "ee3fbd0ef8697ae9b71e3de9cf6856ca",
     "url": "/static/media/profile.ee3fbd0e.jpg"
+  },
+  {
+    "revision": "94a629c920c0eec941766a418268d54d",
+    "url": "/static/media/python.94a629c9.png"
   },
   {
     "revision": "ef194ddf5faf63cb6cc580a4535be695",
@@ -166,13 +122,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8e5b87b60151049a8df9ec0bd30978f0",
     "url": "/static/media/slide3.8e5b87b6.webp"
-  },
-  {
-    "revision": "9ceedb838144da63d409d778f4245a82",
-    "url": "/static/media/styled-components.9ceedb83.svg"
-  },
-  {
-    "revision": "3de182d2120823fe49c27eeb1765c53a",
-    "url": "/static/media/typescript.3de182d2.svg"
   }
 ]);

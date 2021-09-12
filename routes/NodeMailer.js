@@ -42,13 +42,13 @@ Router.post("/mail", async (req, res) => {
       });
     });
   } catch (e) {
+    console.log(e.message);
     if (e instanceof TypeError) {
       res.status(500).json({
         err: "Send mail was faild.. try again",
         Success: false,
       });
     }
-    console.error(e.message);
     res.status(400).json({
       err: "Pleaze complete all  fields",
       Success: false,

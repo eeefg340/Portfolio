@@ -8,7 +8,7 @@ import "./experience.styles.css";
 
 const Experience = () => {
   return (
-    <div id="experience">
+    <div>
       <h1 className="pt-3 text-center font-details-b pb-3">EXPERIENCE</h1>
       <Jumbotron className="jumbo-style">
         <Container>

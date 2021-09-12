@@ -9,7 +9,7 @@ import Button from "react-bootstrap/Button";
 
 const About = () => {
   return (
-    <div id="about">
+    <div>
       <div className="about">
         <h1 className="pt-3 text-center font-details pb-3">ABOUT ME</h1>
         <Container>
@@ -27,7 +27,7 @@ const About = () => {
             </Col>
             <Col xs={12} md={6}>
               <Row className=" align-items-start p-2 my-details rounded">
-                Hi there! I am <strong>&nbsp;Din roda</strong>
+                {/* Hi there! I am <strong>&nbsp;Din roda</strong>
                 I am a Full Stack Web Developer, My first project was based on a
                 business translation, which has reached a very high level and
                 can be seen in my portfolio, In the project,i built an ordering
@@ -37,7 +37,17 @@ const About = () => {
                 technologies I work with are: client side: react,library of react
                 ui. on the server side node js mongodb. Loves to learn new things
                 on my own all the time and i always Improves my skills. I live
-                and breathe the web app development world.
+                and breathe the web app development world. */}
+                Hi there! I am <strong>&nbsp;Din roda</strong>
+                I am a Fullstack developer. I am passionate about my work with a
+                keen eye for aesthetics. I am a quick learner, detail oriented
+                and am excellent at strategic planning. I am also flexible and
+                easy-going with superb interpersonal skills, which makes me a
+                great team player & as developer. Loves to learn new things on
+                my own,and i always Improves my skills.my goal is always driven
+                towards providing amazing experience with the best level of
+                quality and service to them. I live and breathe the web app
+                development world that i love so much.
                 <br /> <br />
                 <Col className="d-flex justify-content-center flex-wrap">
                   <div>
@@ -47,7 +57,7 @@ const About = () => {
                       </Button>
                     </a>
                   </div>
-               
+
                   <div>
                     <a
                       href="https://github.com/eeefg650"
